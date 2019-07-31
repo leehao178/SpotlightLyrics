@@ -107,6 +107,7 @@ open class LyricsView: UITableView, UITableViewDataSource, UITableViewDelegate {
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = dequeueReusableCell(withIdentifier: "LyricsCell", for: indexPath) as! LyricsCell
         cell.update(with: lyricsViewModels[indexPath.row])
+        cell.backgroundColor = UIColor.clear
         return cell
     }
     
