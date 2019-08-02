@@ -162,12 +162,7 @@ open class LyricsView: UITableView, UITableViewDataSource, UITableViewDelegate {
         }
         
         if let lastIndex = lastIndex {
-            if lyricsViewModels.count > lastIndex{
-                lyricsViewModels[lastIndex].highlighted = false
-                print("lyricsViewModels = \(lyricsViewModels.count)")
-            }
-            
-            
+            lyricsViewModels[lastIndex].highlighted = false
         }
         
         if index > 0 {
