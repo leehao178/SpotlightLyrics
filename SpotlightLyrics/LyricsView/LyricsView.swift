@@ -162,13 +162,12 @@ open class LyricsView: UITableView, UITableViewDataSource, UITableViewDelegate {
         }
         lastIndex = 2
         if let lastIndex = lastIndex {
-            if lyricsViewModels.count > lastIndex{
-                lyricsViewModels[lastIndex].highlighted = false
+                //lyricsViewModels[lastIndex].highlighted = false
             }
-        }
+ 
         
         if index > 0 {
-            lyricsViewModels[index - 1].highlighted = true
+            //lyricsViewModels[index - 1].highlighted = true
             scrollToRow(at: IndexPath(row: index - 1, section: 0), at: .middle, animated: animated)
             lastIndex = index - 1
         }
