@@ -160,12 +160,12 @@ open class LyricsView: UITableView, UITableViewDataSource, UITableViewDelegate {
         guard lastIndex == nil || index - 1 != lastIndex else {
             return
         }
-        
-        //if let lastIndex = lastIndex {
-            //if lyricsViewModels.count > lastIndex{
-                //lyricsViewModels[lastIndex].highlighted = false
-            //}
-       // }
+        lastIndex = 2
+        if let lastIndex = lastIndex {
+            if lyricsViewModels.count > lastIndex{
+                lyricsViewModels[lastIndex].highlighted = false
+            }
+        }
         
         if index > 0 {
             lyricsViewModels[index - 1].highlighted = true
