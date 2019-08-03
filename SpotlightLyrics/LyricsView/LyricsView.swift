@@ -162,7 +162,9 @@ open class LyricsView: UITableView, UITableViewDataSource, UITableViewDelegate {
         }
         
         if let lastIndex = lastIndex {
-            lyricsViewModels[lastIndex].highlighted = false
+            if lyricsViewModels.count > lastIndex{
+                lyricsViewModels[lastIndex].highlighted = false
+            }
         }
         
         if index > 0 {
